@@ -1,0 +1,352 @@
+/* desktop first */
+/* html */
+html{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-size: 10px;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* home */
+.home
+{
+    height: 600px;
+    width: 100%;
+    /* background-color: pink; */
+    background-image: url(image.jpg);
+    text-align: center;
+    position: fixed;
+    color: white;
+    text-align: center;
+}
+/* h1 */
+.h1
+{
+    font-size: 60px;
+    text-align: center;
+    margin: 15%;
+    font-weight: bold;
+    
+}
+
+/* video gallary */
+.video-container
+{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+margin: 10px 10px 10px 10px;
+justify-content: center;
+
+
+}
+/* video */
+.video{
+    border: 1px solid white;
+    width: 300px;
+    padding: 10px;
+    
+
+}  
+
+/* header */
+.top-header
+{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid green;
+    padding: 20px;
+
+}
+/* logo */
+.logo
+{
+    width: 15%;
+    height: auto;
+
+}
+
+/* navbar */
+.navbar
+{
+    flex:90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+/* navbar */
+.navbar a{
+    font-size:1.6rem;
+    text-decoration: none;
+    color: darkblue;
+    cursor: pointer;
+    padding: 15px 20px;
+    font-weight: bold;
+    
+
+}
+
+/* menu */
+.menu
+{
+    position: fixed;
+    right:0;
+    width: 4%;
+    height: auto;
+}
+
+
+/* main */
+.main
+{
+
+    /* 100% for all section - 10% aside and 90% main article */
+ 
+    display: flex;
+    font-size: 1.6 rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+/* home message */
+ .mypage
+{
+font-weight: bold;
+text-align: center;
+width: 100%;
+} 
+
+/* aside quick links */
+.aside
+{
+    flex: 10%;
+    margin-top: 10px;
+    background-color: lightgrey;
+
+   
+}
+
+/* article */
+
+.article
+{
+   
+    flex: 90%;
+    margin-top: 10px;
+   
+}
+
+.article p
+{ 
+    column-count: 3;
+    margin:20px
+}
+.main-footer
+{
+    font-size: 1.6 rem;
+    display: flex;
+    width: 100%;
+    background-color:lightgray;
+    margin-top: 5%;
+  
+
+    position: fixed;
+    bottom: 0;
+
+}
+
+
+.reg-form{
+    flex: 90%;
+    margin-top: 10px;    
+    height: 79vh;
+}
+.reg-form form{
+    margin: 75px;    
+}
+input[type=text]{
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 1px solid red;
+    margin: 10px;
+}
+input[type=submit]{
+    background-color: green;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.video-contents{
+    flex: 90%; 
+    height: 78vh;   
+}
+.video-contents video{
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.product-container{
+    flex:90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.product{
+    box-shadow: 0 4px 8px 0 grey;
+    /* border: 1px solid grey; */
+    margin: 20px;
+}
+
+
+
+
+.product img{
+    width: 70%;
+}
+.product button{
+    width: 100%;
+    border: none;
+    background-color: darkslategrey;
+    color: white;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+
+
+
+.main-footer div{
+    flex: 33.33%;
+    text-align: center;
+}
+
+
+.main-footer ul{
+  list-style-type: none;
+    
+}
+
+.main-footer li:first-child
+{
+    font-weight: bold;
+    border-bottom: black 1px solid;
+}
+
+/* for mobile devices */
+
+@media only screen and (min-width:0) and (max-width:500)
+{
+
+
+
+    html{
+     
+        font-size: 8px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+       }
+       
+       .top-header
+       {
+        
+           flex-direction: column;
+           align-items: center;
+
+       
+       }
+       
+       .logo
+       {
+           width: 15%;
+        
+       
+       }
+       
+       .navbar
+       {
+           /* flex:90%;
+           display: flex; */
+           flex-direction: column;
+           justify-content: center;
+          
+       }
+       
+     
+    
+       
+       .aside
+       {
+       display: none;
+      
+       
+          
+       }
+     
+
+       
+       .article
+       {
+          
+           flex: 90%;
+           margin-top: 10px;
+          
+       }
+       
+       .article p
+       { 
+           column-count: 1;
+           margin:20px
+       }
+
+       
+       .main-footer{
+        flex-direction: column;
+    }
+       
+
+}
+
+
+
+/* for tab devices */
+
+@media only screen and (min-width:501) and (max-width:700)
+{
+
+    html{           
+        font-size: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    }
+    .logo{
+        width: 15%;
+    }
+    .menu {
+        display: none;
+    }
+    .aside{
+        display: none;
+    }
+    .article p{
+        column-count: 2;        
+    }
+}
+
+ 
+
+
+
+

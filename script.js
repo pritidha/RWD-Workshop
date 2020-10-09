@@ -1,0 +1,12 @@
+function showhidemenu()
+{
+   let mn =  document.querySelector('#navbar')
+   if(mn.style.display==='flex'){
+       mn.style.display = 'none'
+   }else{
+       mn.style.display = 'flex'
+   }
+
+}
+
+
